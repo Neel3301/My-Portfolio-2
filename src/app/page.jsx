@@ -32,23 +32,21 @@ export default function Home() {
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
+                projects and articles, showcasing my expertise in Next.js and
                 web development.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/dummy.pdf"
+                  href="/resume.pdf"
                   target="_blank"
                   className="flex items-center md:p-2 md:px-4 md:text-base dark:text-dark dark:bg-light bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark hover:dark:text-light hover:bg-light hover:dark:bg-dark border-2 border-solid border-transparent hover:border-dark  hover:dark:border-light  transition ease duration-300"
-                  download={true}
-                >
+                  download={true}>
                   Resume <LinkArrow className="w-6 ml-1" />
                 </Link>
                 <Link
                   href="mailto:neel.c.3301@outlook.com"
                   target="_blank"
-                  className="text-lg font-medium md:text-base capitalize dark:text-light text-dark underline underline-offset-4 ml-4"
-                >
+                  className="text-lg font-medium md:text-base capitalize dark:text-light text-dark underline underline-offset-4 ml-4">
                   Contact
                 </Link>
               </div>
@@ -57,7 +55,11 @@ export default function Home() {
         </Layout>
         <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-          <Image src={lightbulb} alt="lightbulb" className="w-full h-auto" />
+          <Image
+            src={lightbulb}
+            alt="lightbulb"
+            className="w-full h-auto"
+          />
         </div>
       </div>
     </>

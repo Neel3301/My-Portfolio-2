@@ -3,7 +3,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../../public/images/profile/pp.png";
 import { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
@@ -37,7 +37,10 @@ const about = () => {
     <>
       <Head>
         <title>Chotaliya Neel | About Page</title>
-        <meta name="description" content="description" />
+        <meta
+          name="description"
+          content="description"
+        />
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light min-w-[320px]">
@@ -52,31 +55,21 @@ const about = () => {
                 About Me
               </h2>
               <p className="font-medium">
-                {` Hi, I'm Neel Chotaliya, a web developer and UI/UX designer with
-                a passion for creating beautiful, functional, and user-centered
-                digital experiences. With 2 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients' visions to life.`}
+                {` Hi, I'm Neel Chotaliya, a Next.js developer specializing in frontend development. Over the past year, I've been freelancing and have successfully completed numerous projects. My passion lies in crafting innovative and visually appealing digital experiences that captivate users.`}
               </p>
               <p className="font-medium my-4">
-                {`I believe that design is about more than just making things look
-                pretty – it's about solving problems and creating intuitive,
-                enjoyable experiences for users.`}
+                {`I believe in pushing the boundaries of creativity while ensuring functionality and usability remain at the forefront. As a visionary and quick learner, I thrive on tackling complex challenges and finding creative solutions.`}
               </p>
               <p className="font-medium">
-                {`Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.`}
+                {`Whether it's building websites, mobile apps, or other digital products, I approach each project with a commitment to excellence and a dedication to delivering results that exceed expectations. I'm excited about the opportunity to collaborate on your next project and bring my skills and creativity to the table.`}
               </p>
             </div>
             <div className="col-span-3 xl:col-span-4 md:order-1 md:col-span-8 relative h-max rounded-2xl border-2 border-solid border-dark dark:border-light dark:bg-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[103%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+              <div className="absolute  top-0 -right-3 -z-10 w-[103%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={profilePic}
                 alt="img"
-                className="w-full h-auto rounded-2xl"
+                className="w-full h-auto bg-black rounded-2xl"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
@@ -84,7 +77,7 @@ const about = () => {
             <div className="col-span-2 xl:col-span-8 xl:flex-row xl:items-center md:col-span-8 md:order-3 flex flex-col items-center justify-between">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl xs:text-4xl">
-                  <AnimatedNumbers value={50} />+
+                  <AnimatedNumbers value={3} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   satisfied clients
@@ -92,7 +85,7 @@ const about = () => {
               </div>
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl xs:text-4xl">
-                  <AnimatedNumbers value={70} />+
+                  <AnimatedNumbers value={7} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Project Completed
@@ -100,7 +93,7 @@ const about = () => {
               </div>
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl xs:text-4xl">
-                  <AnimatedNumbers value={2} />+
+                  <AnimatedNumbers value={1} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Years of Experience
@@ -109,7 +102,7 @@ const about = () => {
             </div>
           </div>
           <Skills />
-          <Experience />
+          {/* <Experience /> */}
           <Education />
         </Layout>
       </main>
