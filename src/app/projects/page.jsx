@@ -11,6 +11,8 @@ import project3 from "../../../public/images/projects/p2.png";
 import project4 from "../../../public/images/projects/p4.png";
 import project5 from "../../../public/images/projects/p5.png";
 import project6 from "../../../public/images/projects/p6.png";
+import project7 from "../../../public/images/projects/p7.png";
+import project8 from "../../../public/images/projects/p8.png";
 
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/Transition/TransitionEffect";
@@ -24,7 +26,8 @@ const FeatureProjects = ({ type, title, summary, img, link, github }) => {
       <a
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+      >
         <FramerImage
           src={img}
           alt={title}
@@ -42,25 +45,24 @@ const FeatureProjects = ({ type, title, summary, img, link, github }) => {
         <a
           href={link}
           target="_blank"
-          className="hover:underline underline-offset-2 ">
+          className="hover:underline underline-offset-2 "
+        >
           <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm">
             {title}
           </h2>
         </a>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm text-justify">
           {summary}
         </p>
         <div className="mt-2 flex items-center ">
-          <a
-            href={github}
-            target="_blank"
-            className="w-10">
+          <a href={github} target="_blank" className="w-10">
             <GithubIcon />
           </a>
           <a
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light sm:px-4 sm:text-base p-2 text-lg px-6 font-semibold dark:bg-light dark:text-dark  ">
+            className="ml-4 rounded-lg bg-dark text-light sm:px-4 sm:text-base p-2 text-lg px-6 font-semibold dark:bg-light dark:text-dark  "
+          >
             Visit Project
           </a>
         </div>
@@ -77,7 +79,8 @@ const Project = ({ title, type, img, link, github }) => {
       <a
         href={link}
         target="_blank"
-        className="w-full cursor-pointer overflow-hidden rounded-lg">
+        className="w-full cursor-pointer overflow-hidden rounded-lg"
+      >
         <FramerImage
           src={img}
           alt={title}
@@ -97,22 +100,21 @@ const Project = ({ title, type, img, link, github }) => {
         <a
           href={link}
           target="_blank"
-          className="hover:underline underline-offset-2 ">
+          className="hover:underline underline-offset-2 "
+        >
           <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
             {title}
           </h2>
         </a>
         <div className="mt-2 flex items-center ">
-          <a
-            href={github}
-            target="_blank"
-            className="w-8 md:w-6">
+          <a href={github} target="_blank" className="w-8 md:w-6">
             <GithubIcon />
           </a>
           <a
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-1 text-lg px-8 font-semibold dark:bg-light dark:text-dark md:text-base ">
+            className="ml-4 rounded-lg bg-dark text-light p-1 text-lg px-8 font-semibold dark:bg-light dark:text-dark md:text-base "
+          >
             Visit
           </a>
         </div>
@@ -126,27 +128,24 @@ const projects = () => {
     <>
       <Head>
         <title>Chotaliya Neel | Projects Page</title>
-        <meta
-          name="description"
-          content="description"
-        />
+        <meta name="description" content="description" />
       </Head>
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center min-w-[320px]">
         <Layout className="pt-16">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
+            text="Code Creates Reality!"
             className="text-8xl text-center mb-16 md:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 xl:gap-x-16  lg:gap-x-8 md:gap-y-24  sm:gap-x-0">
             <div className="col-span-12">
               <FeatureProjects
-                title="Welcome to my Cosmic Craft"
+                title="Welcome to my Web Weaver"
                 type="Featured Project | Under Development"
-                summary="Developing an innovative web builder using Next.js targeting small business owners, especially in the retail sector, to effortlessly establish an online presence. The platform offers a range of customizable website templates, enabling users to personalize their sites without any coding expertise. Users can adjust fonts, colors, images, and other elements to create a unique online presence for their businesses."
-                img={project2}
-                github="https://github.com/Neel3301/web-builder-cosmic-craft"
-                link="https://web-builder-cosmic-craft.vercel.app/auth/login"
+                summary="Web Weaver is a no-code web builder I created for users to design beautiful single-page websites to showcase portfolios, services, or businesses. Inspired by Linktree but offering deeper customization, it provides a wide range of flexible templates. Built with Next.js, Prisma ORM, MongoDB, Cloudinary, Zustand, Tailwind CSS, and TypeScript, Web Weaver empowers anyone to craft their own unique online presence with ease and creativity."
+                img={project7}
+                github="https://github.com/Neel3301/Web-Weaver"
+                link="https://web-weaver-psi.vercel.app/"
               />
             </div>
             <div className="col-span-6 sm:col-span-12 ">
@@ -179,22 +178,22 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Flutter Instagram Clone"
-                type="Featured Project"
-                img={project6}
-                github="https://github.com/Neel3301/Instagram-clone"
-                link="https://github.com/Neel3301/Instagram-clone"
+                title="Cosmic Craft"
+                type="1st Draft of Web Weaver"
+                img={project2}
+                github="https://github.com/Neel3301/web-builder-cosmic-craft"
+                link="https://web-builder-cosmic-craft.vercel.app/auth/login"
               />
             </div>
-            {/* <div className="col-span-6 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Welcome to My Next.js Portfolio"
-                type="Featured Project"
-                img={project1}
-                github="https://github.com/Neel3301/My_Portfolio"
-                link="https://my-portfolio-swart-seven.vercel.app/"
+                title="White Board"
+                type="Collaborative Online Whiteboard"
+                img={project8}
+                github="https://github.com/Neel3301/White-Board/"
+                link="https://white-board-roan.vercel.app/"
               />
-            </div> */}
+            </div>
           </div>
         </Layout>
       </main>

@@ -28,7 +28,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm ">
           {time} | {address}
         </span>
-        <p className="font-medium w-full md:text-sm">{work}</p>
+        <p className="font-medium w-full md:text-sm text-justify">{work}</p>
       </motion.div>
     </li>
   );
@@ -52,46 +52,21 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between xs:ml-2">
           <Details
-            position="Software Engineer "
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present "
-            address="| Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
+            position="Web Development Intern"
+            company="Softrica"
+            companyLink="https://www.softrica.com/"
+            time="May 2024 - July 2024"
+            address="Surat, Gujarat 394518"
+            work="Managed more than 7+ client projects using WordPress technology, showcasing experience in creating customized and responsive websites that meet diverse client needs."
           />
 
           <Details
-            position="Intern"
-            company="Facebook"
-            companyLink="www.facebook.com"
-            time="Summer 2021"
-            address="Menlo Park, CA."
-            work="Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
-            share short-form video content, including designing and implementing a new user interface and developing 
-            the backend infrastructure to support the feature."
-          />
-
-          <Details
-            position="Software Developer"
-            company="Amazon"
-            companyLink="www.amazon.com"
-            time="Summer 2019"
-            address="Redmond, WA."
-            work="Worked on a team responsible for developing new features for Microsoft's Windows operating system, 
-            including implementing a new user interface for a system settings panel and optimizing the performance of 
-            a core system component."
-          />
-
-          <Details
-            position="Teaching Assistant"
-            company="MIT"
-            companyLink="www.mit.com"
-            time="Fall 2018"
-            address="Massachusetts Ave, Cambridge, MA."
-            work="Assisted in teaching a course on computer programming, held office hours to help students with assignments, 
-            and graded exams and assignments."
+            position="React.JS Intern"
+            company="Logicwind"
+            companyLink="https://www.logicwind.com"
+            time="December 2024 - Present"
+            address="Surat, Gujarat 395007"
+            work="Developed and maintained Instaplug’s Analytics Module using React.js and Chart.js to enable detailed tracking of user interactions, unique visitors, device types, and demographics, while also building the Shoppable Feed Module for tagging products directly on Instagram posts within embedded widgets. Engineered a custom, scalable cross-domain tracking system without third-party analytics, ensuring high accuracy across multiple domains. Additionally, contributed to enhancing real-time visitor tracking and marketing insights in the frontend analytics module for URLTags."
           />
         </ul>
       </div>

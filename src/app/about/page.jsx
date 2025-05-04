@@ -37,10 +37,7 @@ const about = () => {
     <>
       <Head>
         <title>Chotaliya Neel | About Page</title>
-        <meta
-          name="description"
-          content="description"
-        />
+        <meta name="description" content="description" />
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light min-w-[320px]">
@@ -102,7 +99,7 @@ const about = () => {
             </div>
           </div>
           <Skills />
-          {/* <Experience /> */}
+          <Experience />
           <Education />
         </Layout>
       </main>
